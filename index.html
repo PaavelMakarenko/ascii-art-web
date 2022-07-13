@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <title>ascii-art-web</title>
+</head>
+<body>
+
+    <h1 id="title">ascii-art-web</h1>
+
+    <div class="form" id="form">
+        
+        <form id="input" method="POST"> 
+
+            <div class="form-area">
+                <label for="text">Enter text:</label><br>
+                <textarea id="text" rows="3" name="text"></textarea>
+            </div>
+            
+            <div class="btm-form">
+                <div class="form-area text">
+                    <label for="banner">Font:</label><br>
+                    <select id="banner" name="banner">
+                        <option value="standard">Standard</option>
+                        <option value="shadow">Shadow</option>
+                        <option value="thinkertoy">Thinkertoy</option>
+                    </select>
+                </div>
+
+                <div class="form-area submit">
+                    <input type="submit" id="submit">
+                </div>
+            </div>
+            
+        </form>
+    </div>
+
+    <div class="output">
+        <h2>Output:</h2>
+        <pre class="output-area" id="content">{{.Ascii}}</pre>
+    </div>
+
+</body>
+</html>
